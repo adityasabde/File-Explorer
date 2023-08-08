@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>File Exploro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   <script src="index.js"></script>
+  </head>
+  <body onload="onLoad()" >
+    <div class="head">
+      <h3 style="font-size: 36px;"> File Explorer</h3>
+    </div>
+    <div class="inputtag">
+
+      <label for="inputname" style="font-size: 20px;" >Enter your file or folder name  :- </label>
+      <input name="inputname" type="text" id="InputValueId" placeholder="enter name"/>
+      <!-- <button class="btn" onclick="OnclickEvent(event)"> create</button> -->
+
+    </div>
+    
+    
+    <div class="middle" id="0">
+      <ul class="main-list-0" >
+      <li>
+        <div class="box">
+       
+            <div>
+              <span class="rotate" id="root-arrow">&#10148;</span>
+              <span>Root </span>
+            </div>
+            
+            <div>
+              <button class="sub-icon " id="addFolder" style="cursor: pointer;" onclick="OnclickEvent(this)"> &#128193;</span>
+              <button class="sub-icon " id="addFile"style="cursor: pointer;" onclick="OnclickEvent(this)">&#128196;</span>
+              <button class="sub-icon " id ="deletebutton" style="cursor: pointer;" onclick="OnclickEvent(this)"> &#x2715;</span>
+            </div>
+    
+          </div>
+        <ul>
+
+        </ul>
+      </li>
+      
+     
+        
+         
+        <!-- <div class="folder-div-1">
+          <ul>
+          <li>
+            <div class="folder-header-1" id="1" style="display: flex;">
+                <div class="folder-name-1" >
+                    <span>&#10148;</span>
+                    <span class="folder-name-1">Folder 1 </span>
+                </div>
+                <div class="folder-">
+                  <button class="sub-icon " id="addFolder" style="cursor: pointer;" onclick="OnclickEvent(this)"> &#128193;</span>
+                    <button class="sub-icon " id="addFile"style="cursor: pointer;" onclick="OnclickEvent(this)">&#128196;</span>
+                    <button class="sub-icon " id ="deletebutton" style="cursor: pointer;" onclick="OnclickEvent(this)"> &#x2715;</span>
+                </div>
+              </li>
+              <ul>
+            </div> -->
+         
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
